@@ -96,7 +96,8 @@ namespace WasteCollection.Models
         ORDER BY WholeAddress";
       try
       {
-        using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["GIS"].ConnectionString))
+        string cs = ConfigurationManager.ConnectionStrings["GIS"].ConnectionString;
+        using (IDbConnection db = new SqlConnection(cs))
         {
           return (List<FoundAddress>)db.Query<FoundAddress>(query, dpa);
         }
