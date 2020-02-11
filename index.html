@@ -9,7 +9,11 @@
   <link href="Content/bootstrap.min.css" rel="stylesheet" />
   <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
   <style>
-
+    body
+    {
+      background-color: #F0F4E9;
+      color: #4b4b4b;
+    }
     .glyphicon-refresh-animate
     {
       -webkit-animation: spinw .7s infinite linear;
@@ -83,15 +87,15 @@
   </style>
 </head>
 <body class="container">
-  <div class="headerBox container bg-info">
+  <div class="headerBox container">
     <h3>
-      Waste Collection Zone Helper
+      Collection Day Lookup
     </h3>
     <p>
       You can use this application to find your waste collection pick up dates.  If we don't have that information because it is controlled by a municipality, we will refer you to their website.
     </p>
   </div>
-  <form onsubmit="return Search(event);)">
+  <form onsubmit="return Search(event);">
     <div style="margin-top: 1em;"
          class="form-group row">
       <label class="control-label col-sm-2"
@@ -122,7 +126,7 @@
           id="Error">
 
     </span>
-    <div style="margin-bottom: 1em;"
+    <div style="margin-bottom: 1em; padding-left: 15px;"
          class="row">
       <button id="btnSearch"
               onclick="return Search(event);"

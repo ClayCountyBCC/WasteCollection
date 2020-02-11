@@ -53,8 +53,8 @@ function BuildResults(data)
   {
     var row = document.createElement("tr");
     var cell = document.createElement("td");
-    cell.colSpan = 4;
-    cell.appendChild(document.createTextNode("No data was found for this search."));
+    cell.colSpan = 7;
+    cell.appendChild(document.createTextNode("No data was found for this house number and street combination."));
     row.appendChild(cell);
     tbody.appendChild(row);
   }
