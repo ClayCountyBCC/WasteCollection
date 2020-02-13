@@ -18,7 +18,7 @@
   var street = document.getElementById('street').value.toUpperCase();
 
   $.get(
-    'API/Zone/Search?house=' + house + '&street=' + street,
+    './API/Zone/Search?house=' + house + '&street=' + street,
     "",
     Success,
     'json');

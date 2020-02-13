@@ -104,6 +104,7 @@ namespace WasteCollection.Models
       }
       catch (Exception ex)
       {
+        new ErrorLog(ex, "");
         return null;
       }
     }

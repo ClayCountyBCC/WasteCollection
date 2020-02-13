@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <title>Evacuation Zone Helper</title>
+  <title>Collection Day Look up Helper</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=yes">
 
@@ -94,6 +94,10 @@
     <p>
       You can use this application to find your waste collection pick up dates.  If we don't have that information because it is controlled by a municipality, we will refer you to their website.
     </p>
+    <p>
+      Please type in the house number, and part of the street name to search. Street suffixes like Drive or Street are not needed. For example, instead of entering Blanding Blvd for the street name, you can just enter Blanding.
+    </p>
+
   </div>
   <form onsubmit="return Search(event);">
     <div style="margin-top: 1em;"
@@ -145,7 +149,13 @@
 
     </div>
   </form>
+  <div>
 
+    <p style="color: darkred;">
+      For County Residents and the New Years, Thanksgiving, and Christmas Holidays, Collection will move to the following day, with Friday collections moving to Saturday.
+    </p>
+
+  </div>
   <script src="Scripts/app.js?201709081647"></script>
 </body>
 
